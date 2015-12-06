@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        <record id="academy_form" model="ir.ui.view">
+            <field name="name">Academia</field>
+            <field name="model">teachers</field>
+            <field name="arch" type="xml">
+                <form string="academia">
+                    <group>
+                        <field name="name"/>
+                    </group>
+                </form>
+            </field>
+        </record>
+
+        <record model="ir.actions.act_window" id="actions_academy">
+            <field name="name">Academia</field>
+            <field name="res_model">teachers</field>
+            <!--<field name="view_mode">tree,form</field>-->
+        </record>
+
+        <menuitem id="main_openacademy_menu" name="Open Academy"/>
+        <menuitem id="openacademy_menu" name="Open Academy" parent="main_openacademy_menu"/>
+        <menuitem id="courses_teachers" name="Teachers" parent="openacademy_menu" action="actions_academy"/>
+    </data>
+</openerp>

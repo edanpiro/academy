@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        <record id="edgard" model="teachers">
+            <field name="name">Edgard</field>
+        </record>
+        <record id="fabiana" model="teachers">
+            <field name="name">Fabiana</field>
+        </record>
+    </data>
+</openerp>
